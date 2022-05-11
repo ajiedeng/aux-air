@@ -1,0 +1,73 @@
+@import "@css/style";
+@import "@css/themeColor";
+
+.mainPage {
+    background: #fff;
+
+    .navbar {
+        background: #fff;
+    }
+
+    .holder {
+        display: flex;
+        height: 70%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // gap: 40px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #999999;
+            font-size: 14px;
+            padding-bottom: 40px;
+
+            img {
+                height: 180px;
+                width: 180px;
+            }
+        }
+
+        button {
+            width: 145px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 16px;
+            color: #fff;
+            background: $btn-color;
+            border-radius: 0;
+        }
+    }
+
+    .timerlistBox {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        // gap: 12px;
+        .tips{
+            margin: 6px 0;
+            text-align: center;
+            font-size: 12px;
+        }
+        .button {
+            background: #fff;
+            width: 100%;
+            height: 64px;
+            color: $btn-color;
+            line-height: 64px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 0%;
+            margin-top: 12px;
+        }
+
+        .timerlistContainer {
+            flex: 1;
+            overflow: auto;
+            width: 100%;
+        }
+    }
+}

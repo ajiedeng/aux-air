@@ -1,0 +1,14 @@
+{
+  "default_lang": "zh-cn",
+  "id": 2,
+  "pid": [
+    "00000000000000000000000090650000"
+  ],
+  "suid": [
+    "4.1.1"
+  ],
+  "version": 1,
+  "titleBar":{
+    "visibility":false
+  }
+}

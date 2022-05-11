@@ -1,0 +1,45 @@
+
+.CircleSlider .rs-handle  {
+    background-color: #fff;
+    border: 5px solid #FFA41F;
+    box-sizing: border-box;
+}
+
+.rs-control{
+    margin: 0 auto;
+}
+.rs-border{
+    border: 1px solid transparent;
+}
+.blue_circle .rs-handle{
+    background-color: #fff;
+    border: 5px solid #1696FF;
+}
+
+.autoCSS .rs-tooltip-text{
+    font-size: 44PX;
+}
+.rs-tooltip-text{
+    font-size: 65PX;
+    color: #FFF;
+}
+.rs-tooltip.rs-edit{
+    padding: 0;
+}
+
+.rs-bg-color{
+    background-color: transparent;
+}
+
+.rs-disabled{
+    opacity: 1;
+}
+.rs-full .rs-tooltip{
+    top: 48%;
+}
+.rs-tooltip.rs-tooltip-text{
+    max-width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

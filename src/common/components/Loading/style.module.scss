@@ -1,0 +1,83 @@
+@import "@css/style";
+@import "@css/themeColor";
+
+.box{
+    width: 145px;
+    height: 95px;
+    position: fixed;
+    top: 40%;
+    z-index: 19;
+    left: 50%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 4px;
+    text-align:center;
+    font-size: 14px;
+    margin-left: -72px;
+    margin-top: -48px;
+}
+.box.beyondBox{
+    width: 180px;
+    height: 120px;
+    margin-left: -90px;
+    margin-top: -60px;
+    div{width: 115px; overflow: hidden; text-overflow:ellipsis; white-space: nowrap;margin: 0 auto;}
+}
+
+.maskLayer{
+    @include maskLayer;
+    background: #fff;opacity: 0;z-index: 9;
+}
+
+@keyframes Spinner {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes Spinner {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes roll{
+
+    0%{transform:rotateZ(0deg);}
+  
+    100%{transform:rotateZ(360deg);}
+  
+  }
+.Spinner {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 11px auto 11px;
+    img{
+        width: 100%;
+        height: 100%;
+        animation: roll 2s infinite;
+    }
+}
+
+.box.beyondBox{
+    .Spinner {
+        width: 50px;
+        height: 65px;
+        margin: 0 auto 11px;
+        div{
+            top: 29px;
+            width: 4px;
+            height: 10px;
+            -webkit-transform-origin: 2px 2px;
+            transform-origin: 2px 2px;
+        }
+    }
+}
+
+
+

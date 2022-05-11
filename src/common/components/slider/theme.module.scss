@@ -1,0 +1,40 @@
+@import "@css/themeColor";
+
+.sliderHandle {
+  border: 2px solid $theme-color !important;
+}
+
+.selectionStyle {
+  background-image: -webkit-linear-gradient(top, $theme-color) !important;
+  background-image: -o-linear-gradient(top, $theme-color 0, $theme-color 100%) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($theme-color), to($theme-color)) !important;
+  background-image: linear-gradient(180deg, $theme-color 0, $theme-color) !important;
+  border-radius: 30px;
+}
+
+.tooltipInner {
+  color: $theme-color !important;
+}
+
+.backTransparent {
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 100%);
+}
+
+.jd_unSelected {
+  background-image: -webkit-linear-gradient(top, $theme-color) !important;
+  background-image: -o-linear-gradient(top, $theme-color 0, $theme-color 100%) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($theme-color), to($theme-color)) !important;
+  background-image: linear-gradient(180deg, $theme-color 0, $theme-color) !important;
+  border-radius: 30px;
+}
+
+.jd_slider_ticks {
+  background-image: -webkit-linear-gradient(top, $theme-color) !important;
+  background-image: -o-linear-gradient(top, $theme-color 0, $theme-color 100%) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($theme-color), to($theme-color)) !important;
+  background-image: linear-gradient(180deg, $theme-color 0, $theme-color) !important;
+}
+
+.jd_sliderHandle {
+  border: 3px solid $theme-color !important;
+}

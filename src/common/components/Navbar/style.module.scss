@@ -1,0 +1,90 @@
+@import '@css/style';
+@import '@css/themeColor';
+
+.navbarBox {
+  position: fixed;
+  top: 0;
+  height: 48px;
+  width: 375px;
+  font-size: 18px;
+  z-index: $navBar-z-index;
+
+  .leftRightBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 48px;
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rightHoverBox {
+    position: absolute;
+    margin-top: 12px;
+    right: 12px;
+    height: 110px;
+    width: 143px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+
+    div {
+      height: 54px;
+      line-height: 54px;
+      margin: 0 16px;
+      border-bottom: 1px solid #E1E1E1;
+    }
+
+    div:last-child {
+      border: none;
+    }
+
+  }
+
+  .back {
+    padding-left: 12px;
+    width: 30px;
+    height: 100%;
+    svg{
+      height: 100%;
+    }
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+    // width: 100%;
+    margin: 0 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .rightBtnsBox {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    svg {
+      padding-right: 13px;
+      width: 24px;
+      height: 100%;
+    }
+    span{
+      margin-right: 10px;
+      font-size: 16px;
+      // height: 100%;
+    }
+    div{
+      height: 100%;
+    }
+  }
+  .saveStyle{
+    color: $btn-color;
+  }
+}

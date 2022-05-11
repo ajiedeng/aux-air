@@ -1,0 +1,56 @@
+@import "@css/style";
+@import "@css/themeColor";
+
+.mainPage {
+    background: $pageBg;
+
+    .navbar {
+        background: #fff;
+    }
+}
+
+.cardBox {
+    padding: 11px 16px 12px;
+    height: 100px;
+    box-sizing: border-box;
+    position: relative;
+    &.bottom{
+        border-bottom: 1px solid #E1E1E1;
+    }
+    .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        span {
+            color: #111111;
+            font-size: 24px;
+            height: 34px;
+            line-height: 34px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #999999;
+            height: 20px;
+            line-height: 20px;
+            word-break: break-all;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 300px;
+        }
+
+        .switchBtn {
+            position: absolute;
+            top: 35px;
+            right: 16px;
+            width: 51px;
+            height: 31px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

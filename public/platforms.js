@@ -1,0 +1,29 @@
+window.PLATFORM_MAPPING=
+{
+    params:{
+        dna:['ac_mode','temp','pwr'],
+        jd:['mode','settemp','power'],
+        gome:[1001,2003,1],
+    },
+    vals:{
+        //与参数一样的顺序
+        dna:[
+            [0,1,2,3,4],
+            //null表示非枚举值，值暂时不做映射
+            null,
+            null,
+        ],
+        jd:[
+            [0,1,2,3,4],
+            null,
+            null,
+        ],
+        gome:[
+            [1,3,2,4,0],
+            null,
+            null,
+        ],
+
+    }
+}
+

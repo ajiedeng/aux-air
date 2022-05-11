@@ -1,0 +1,48 @@
+@import "@css/style";
+@import "@css/themeColor";
+
+.repeatSetting {
+    background: #F7F7F7;
+
+    .navbar {
+        background: #fff;
+    }
+
+    .repeatList {
+        padding-top: 12px;
+        overflow: hidden;
+        ul {
+            li {
+                display: flex;
+                justify-content: space-between;
+                height: 60px;
+                line-height: 60px;
+                align-items: center;
+                background: #fff;
+                position: relative; 
+                img {
+                    vertical-align: middle;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #111;
+                    padding-left: 16px;
+                }
+                div{
+                    padding-right: 16px;
+                }
+            }
+            
+        }
+        ul li::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            bottom:0;
+            height: 1px;
+            background: rgba($color: #000000, $alpha: 0.05);
+            left: 16px;
+        }
+    }
+}

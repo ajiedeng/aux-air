@@ -1,0 +1,23 @@
+@import "@css/style";
+@import "@css/themeColor";
+
+.pageBox {
+    box-sizing: border-box;
+    height: 100%;
+    background: $pageBg;
+
+    .pageContainer {
+        box-sizing: border-box;
+        height: 100%;
+        // overflow-y: auto;
+        padding-top: 48px;
+        padding-bottom: 12px;
+        &.noPaddingTop {
+            padding-top: 0;
+        }
+    }
+
+    .bottomX {
+        padding-bottom: 20px;
+    }
+}

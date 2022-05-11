@@ -1,0 +1,71 @@
+@import "@css/style";
+@import "@css/themeColor";
+
+.popupBox {
+    position: relative;
+    // bottom: 0;
+    z-index: 100000;
+
+    .contentBox {
+        &.show {
+            transform: translate(-50%, -50%);
+        }
+
+        transition: all .35s $transitionFunc;
+        width: 288px;
+        background: $popupBg;
+        position: fixed;
+        bottom: 30%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        z-index: 11;
+        border-radius: 4px;
+        text-align: center;
+
+        .titleBox {
+            padding: 20px 39px;
+            min-height: 85px;
+            font-size: 15px;
+            line-height: 21px;
+            text-align: center;
+            color: #111;
+            box-sizing: border-box;
+        }
+
+        .bottom {
+            width: 288px;
+            height: 46px;
+            font-size: 15px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #E1E1E1;
+
+            p {
+                height: 46px;
+                line-height: 46px;
+                width: 50%;
+                border-right: 1px solid #E1E1E1;
+                // padding: 17px;
+            }
+
+            p:last-child {
+                border: none;
+            }
+
+            // .cancel {
+            //     color: $txt-gray;
+            // }
+            .save {
+                color: $btn-color;
+            }
+        }
+
+    }
+
+    .maskLayer {
+        @include maskLayer;
+        // opacity: 0;
+    }
+
+}

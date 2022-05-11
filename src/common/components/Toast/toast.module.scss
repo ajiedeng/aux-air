@@ -1,0 +1,47 @@
+@import "@css/style";
+@import "@css/themeColor";
+.toast {
+    position: fixed;
+    top: 50%;
+    z-index: $toast-z-index;
+    left: 50%;
+    background-color: #5a5a5a;
+    -webkit-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 11px;
+    border-radius: 4.875px;
+    text-align: center;
+}
+
+.maskLayer {
+    @include maskLayer;
+    background: #fff;
+    opacity: 0;
+    z-index: $maskLayer-z-index;
+}
+
+.hook {
+    position: relative;
+    padding: 17px 0 10px;
+    img {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+.box {
+    width: 145px;
+    height: 95px;
+    position: fixed;
+    top: 50%;
+    z-index: $toast-z-index;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: -72px;
+    margin-top: -48px;
+}

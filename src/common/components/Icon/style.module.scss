@@ -1,0 +1,23 @@
+@import "@css/style";
+@import "@css/themeColor";
+
+.iconBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $txt-color;
+    width: 24px;
+    height: 70px;
+    .circle {
+        width: 30px;
+        height: 24px;
+        background-size: 100%;
+        transition: all 200ms $transitionFunc;
+    }
+}
+.iconBox.otherCss{
+    .circle {
+        width: 24px;
+    }
+}

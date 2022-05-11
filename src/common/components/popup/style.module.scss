@@ -1,0 +1,53 @@
+@import "@css/style";
+@import "@css/themeColor";
+
+.popupBox {
+    position: relative;
+    // bottom: 0;
+    z-index: 1;
+    .contentBox {
+        &.show{
+            transform: translateY(0%);
+        }
+        transform: translateY(100%);
+        transition: all .35s $transitionFunc;
+        width: 375px;
+        background: $popupBg;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 11;
+        @include popupRadius;
+        text-align: center;
+        .header{
+            width: 100%;
+            font-size: 15px;
+            line-height: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                padding: 17px;
+            }
+            .title {
+                color: $txt-color;
+                max-width: 252px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .cancel{
+                color: $txt-gray;
+            }
+            .save{
+                color: $btn-color;
+            }
+        }
+       
+    }
+    .maskLayer {
+        @include maskLayer;
+        // opacity: 0;
+    }
+    
+}

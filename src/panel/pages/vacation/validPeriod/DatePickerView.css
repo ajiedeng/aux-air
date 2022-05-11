@@ -1,0 +1,14 @@
+.adm-picker-view-column-item-label {
+    color:#111;
+}
+.adm-picker-view {
+    --height: 240px;
+    --item-height: 46px;
+    --item-font-size: 20px;
+    height: var(--height);
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background: var(--adm-color-white);
+}

@@ -1,0 +1,32 @@
+diff --git a/node_modules/react-dev-utils/FileSizeReporter.js b/node_modules/react-dev-utils/FileSizeReporter.js
+index b2b4cc6..bc0f764 100644
+--- a/node_modules/react-dev-utils/FileSizeReporter.js
++++ b/node_modules/react-dev-utils/FileSizeReporter.js
+@@ -29,9 +29,10 @@ function printFileSizesAfterBuild(
+   previousSizeMap,
+   buildFolder,
+   maxBundleGzipSize,
+-  maxChunkGzipSize
++  maxChunkGzipSize,
++  lastPath
+ ) {
+-  var root = previousSizeMap.root;
++  var root = path.resolve(previousSizeMap.root, lastPath);
+   var sizes = previousSizeMap.sizes;
+   var assets = (webpackStats.stats || [webpackStats])
+     .map(stats =>
+@@ -79,10 +80,10 @@ function printFileSizesAfterBuild(
+     }
+     console.log(
+       '  ' +
+-        (isLarge ? chalk.yellow(sizeLabel) : sizeLabel) +
+-        '  ' +
+-        chalk.dim(asset.folder + path.sep) +
+-        chalk.cyan(asset.name)
++      (isLarge ? chalk.yellow(sizeLabel) : sizeLabel) +
++      '  ' +
++      chalk.dim(asset.folder + path.sep) +
++      chalk.cyan(asset.name)
+     );
+   });
+   if (suggestBundleSplitting) {

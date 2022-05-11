@@ -1,0 +1,76 @@
+@import "@css/style";
+@import "@css/themeColor";
+
+.maskLayer {
+    @include maskLayer;
+    z-index: $maskLayer-z-index;
+}
+
+.commonBox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: $modalZindex;
+}
+
+.alertBox {
+    width: 295px;
+    margin-left: -148px;
+    background: #fff;
+    top: 30%;
+    border-radius: 5px;
+    position: fixed;
+    left: 50%;
+
+    .alertTitle {
+        color: #323232;
+        font-size: 16px;
+        padding: 30px 25px 25px;
+        text-align: center;
+        line-height: 27px;
+    }
+
+    .alertContent {
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+
+        div {
+            border-top: 1px solid #e1e1e1;
+            border-right: 1px solid #e1e1e1;
+        }
+
+        div:last-child {
+            border-right: none;
+            color: $theme-color-cold;
+        }
+    }
+}
+
+//father-box/child-box
+.fatherBox {
+    display: flex;
+}
+
+.childBox {
+    flex: 1;
+    text-align: center;
+}
+
+.popupBox .maskLayer {
+    opacity: 0;
+}
+
+.popupBox:first-child .maskLayer {
+    opacity: 0.3;
+}
+
+.modalZindex {
+    z-index: $modalZindex;
+}
+
+.highlighted {
+    flex: 1;
+    text-align: center;
+    color: $theme-color-cold;
+}
